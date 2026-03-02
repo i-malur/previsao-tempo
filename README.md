@@ -8,12 +8,13 @@ Projeto criado através do vídeo:
 
 ## 🚀 Funcionalidades
 
-- 🔎 Busca de cidade
+- 🔎 Busca de cidade (por voz e texto)
 - 🌡️ Exibição de temperatura atual
 - ☁️ Exibição das condições climáticas
 - 🏙️ Exibição do nome da cidade pesquisada
 - 🖼️ Background dinâmico relacionado ao clima/local
 - 📱 Layout responsivo
+- 🤖 Sugestões de roupas com a IA Inês
 
 
 ## 🛠️ Tecnologias Utilizadas
@@ -60,8 +61,7 @@ Projeto desenvolvido para praticar:
 ## 💡 Melhorias Futuras
 
 - Mostrar previsão para os próximos dias
-- Implementar modo claro/escuro
-- Adicionar animações conforme o clima
+- Finalizar a responsividade
 - Melhorar tratamento de erros
 - Aprimorar para mostrar clima de países
 

@@ -1,4 +1,18 @@
+function changeBackground(clima) {
+    const map = {
+        Clear: "sunny sky city",
+        Rain: "rain city",
+        Clouds: "cloudy sky",
+        Snow: "snow city",
+        Thunderstorm: "storm lightning",
+        Drizzle: "light rain city",
+        Mist: "fog city"
+    };
 
+    const termo = map[clima] || "weather city";
+
+    document.body.style.backgroundImage =`url("https://source.unsplash.com/1920x1080/?${termo}&t=${Date.now()}")`;
+}
 
 function dataInScreen(dados) {
     document.querySelector(".city").innerHTML = "Tempo em: " + dados.name;
@@ -26,7 +40,7 @@ async function searchCity(cidade) {
         return;
     }
 
-    document.body.style.backgroundImage = `url("https://picsum.photos/1920/1080?random=${Math.random()}")`;
+    changeBackground(dados.weather[0].main);
 
     dataInScreen(dados);
 }

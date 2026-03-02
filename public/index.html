@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Previsão do Tempo</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="container-input">
+            <input class="input-city" placeholder="Digite o nome da cidade">
+            <button class="search-button" onclick="clickButton()">
+                <img class="icon-search" alt="busca"
+                    src="https://i0.wp.com/academiaexcel.com/wp-content/uploads/2021/04/lupa-de-pesquisa.png?fit=256%2C256&ssl=1">
+            </button>
+        </div>
+        
+
+        <div class="container-info">
+            <h2 class="city">Tempo [cidade]</h2>
+            <p class="temp">[temperatura]</p>
+
+            <div class="container-tempo">
+                <img class="icon-cloud" alt="icone-info-tempo"src="https://images.emojiterra.com/microsoft/fluent-emoji/15.1/3d/1f30e_3d.png">
+                <p class="text-time"> [Tempo]</p>
+            </div>
+        
+            <p class="humidity">Umidade: [%]</p>
+            <div class="temp-max-min">
+                <p class="temp-max">Temperatura máxima</p>
+                <p class="temp-min">Temperatura mínima</p>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

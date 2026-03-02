@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("https://picsum.photos/1920/1080");
+}
+
+.container{
+    background-color: #171b22;
+    border-radius: 25px;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.container-input{
+    display: flex;
+    gap: 10px;
+}
+
+.input-city{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color: #353f51;
+    color: #ffffff;
+    width: 100%;
+}
+
+.input-city::placeholder{
+    color: white;
+}
+
+.search-button{
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #353f51;
+    cursor: pointer;
+    float: none;
+}
+
+.icon-search{
+    width: 20px;
+}
+.container-info{
+    margin-top: 20px;
+    
+}
+.city{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 25px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.temp{
+    font-size: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+
+.container-tempo{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon-cloud{
+    width: 50px;
+}
+
+.text-time{
+    font-size: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    text-transform: capitalize;
+
+}
+
+.humidity{
+    font-size: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+}
+
+.temp-max-min{
+    display: flex;
+    font-size: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .city {
+        font-size: 20px;
+    }
+
+    .temp {
+        font-size: 18px;
+    }
+
+    .text-time,
+    .humidity,
+    .temp-max-min {
+        font-size: 14px;
+    }
+
+    .icon-cloud {
+        width: 40px;
+    }
+    
+}

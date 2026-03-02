@@ -10,12 +10,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://source.unsplash.com/1920x1080/?weather");
+    background-image: url("source.unsplash.com/1920x1080/?weather");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-image 0.5s ease-in-out;
 }
 
 .container{
@@ -39,7 +35,7 @@ body{
     font-size: 15px;
     background-color: #353f51;
     color: #ffffff;
-    width: 100%;
+    width: 75%;
 }
 
 .input-city::placeholder{
@@ -49,15 +45,41 @@ body{
 .search-button{
     border: none;
     outline: none;
-    padding: 8px;
+    padding: 10px;
     border-radius: 50%;
     background-color: #353f51;
     cursor: pointer;
     float: none;
 }
 
+.search-button:hover{
+    background-color: #707b8f;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .icon-search{
-    width: 20px;
+    width: 30px;
+}
+
+.micro-button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #353f51;
+    cursor: pointer;
+    float: none;
+}
+
+.micro-button:hover{
+    background-color: #707b8f;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.icon-micro{
+    width: 30px;
 }
 .container-info{
     margin-top: 20px;
@@ -66,7 +88,7 @@ body{
 .city{
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-family: 25px;
+    font-size: 25px;
     margin-bottom: 5px;
     transition: all 0.3s ease;
 }
@@ -113,28 +135,173 @@ body{
     justify-content: space-between;
 }
 
-@media (max-width: 480px) {
-    .container {
-        width: 95%;
+.recomendation-ia{
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: white;
+    background-color: #262d3a;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.recomendation-ia:hover{
+    cursor: pointer;
+    transform: scale(0.98);
+    opacity: 0.8;
+}
+
+.response-ia{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    background-color: #707b8f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1024px){
+
+    .container{
+        max-width: 500px;
+        width: 90%;
+    }
+
+    .temp{
+        font-size: 24px;
+    }
+
+    .city{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px){
+
+    body{
         padding: 20px;
+        align-items: flex-start;
     }
 
-    .city {
+    .container{
+        width: 100%;
+        padding: 25px;
+    }
+
+    .container-input{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .input-city{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .search-button,
+    .micro-button{
+        flex: 1;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-search,
+    .icon-micro{
+        width: 25px;
+    }
+
+    .container-tempo{
+        justify-content: center;
+    }
+
+    .temp-max-min{
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    body{
+        padding: 15px;
+    }
+
+    .container{
+        padding: 18px;
+        border-radius: 20px;
+    }
+
+    .city{
         font-size: 20px;
+        text-align: center;
     }
 
-    .temp {
-        font-size: 18px;
+    .temp{
+        font-size: 22px;
+        text-align: center;
     }
 
-    .text-time,
-    .humidity,
-    .temp-max-min {
+    .container-tempo{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icon-cloud{
+        width: 40px;
+    }
+
+    .text-time{
+        margin-left: 0;
+        text-align: center;
         font-size: 14px;
     }
 
-    .icon-cloud {
-        width: 40px;
+    .humidity{
+        text-align: center;
+        font-size: 14px;
     }
-    
+
+    .temp-max-min{
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .recomendation-ia{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .response-ia{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px){
+
+    .temp{
+        font-size: 20px;
+    }
+
+    .city{
+        font-size: 18px;
+    }
+
+    .icon-search,
+    .icon-micro{
+        width: 22px;
+    }
+
+    .response-ia{
+        font-size: 13px;
+    }
 }

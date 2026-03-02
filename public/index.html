@@ -14,12 +14,13 @@
         <div class="container-input">
             <input class="input-city" placeholder="Digite o nome da cidade">
             <button class="search-button" onclick="clickButton()">
-                <img class="icon-search" alt="busca"
-                    src="https://i0.wp.com/academiaexcel.com/wp-content/uploads/2021/04/lupa-de-pesquisa.png?fit=256%2C256&ssl=1">
+                <img class="icon-search" alt="busca" src="https://i0.wp.com/academiaexcel.com/wp-content/uploads/2021/04/lupa-de-pesquisa.png?fit=256%2C256&ssl=1">
+            </button>
+            <button class="micro-button" onclick="voiceDetected()"">
+                <img class="icon-micro" alt="microfone" src="microfone.png">
             </button>
         </div>
-        
-
+       
         <div class="container-info">
             <h2 class="city">Tempo [cidade]</h2>
             <p class="temp">[temperatura]</p>
@@ -36,8 +37,15 @@
             </div>
             
         </div>
+
+        <div class="container-recomendations">
+            <button class="recomendation-ia" onclick="clickButtonIA()">
+                Sugestão de roupa com a Inês 🤖
+            </button>
+            <p class="response-ia"> Fale com a Inês</p>
+        </div>
         
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
